@@ -19,6 +19,7 @@ function rotatePictures() {
     // ищем индекс отображаемой картинки
     // создаем массив из ключей pictures (image/Mountainbike.jpg, image/Oldschool_basket.jpg и т.д.)
     var picturesArray = Object.keys(pictures);
+    // получаем индекс текущей картинки, вызвав функцию, которая его ищет
     var currentPictureIndex = getCurrentPictureIndex(picturesArray, pic.src);
     // объявляем индекс следующей картинки
     var nextPictureIndex = 0;
