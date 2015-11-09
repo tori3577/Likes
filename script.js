@@ -3,8 +3,8 @@
 document.getElementById('velo').onclick = function() {imageChange()};
 
 
-function imageChange() {
-	var pic = document.getElementById('velo');
+	function imageChange () {
+     var pic = document.getElementById('velo');
 
      if (pic.src.match('Oldschool_bike')) {
      	pic.src = 'image/Mountainbike.jpg';
@@ -21,3 +21,9 @@ function imageChange() {
      }
 
 }
+
+ var clicks = 0;
+    function setClick() {
+        clicks ++;
+        document.getElementById("clicks").innerHTML = clicks;
+    };
